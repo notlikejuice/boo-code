@@ -68,6 +68,10 @@ const extensionConfig = {
 	minify: production,
 	sourcemap: !production,
 	logLevel: "silent",
+	metafile: true, // Dla analizy rozmiaru bundla
+	chunkNames: "chunks/[name]-[hash]",
+	splitting: true, // Rozdzielenie dużych modułów
+	target: ["es2020"], // Nowszy target dla mniejszego kodu
 	plugins: [
 		copyWasmFiles,
 		/* add to the end of plugins array */

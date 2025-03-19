@@ -1,6 +1,6 @@
 {
-	"name": "claude-dev",
-	"displayName": "Cline",
+	"name": "boo-coder",
+	"displayName": "Boo Coder",
 	"description": "Autonomous coding agent right in your IDE, capable of creating/editing files, running commands, using the browser, and more with your permission every step of the way.",
 	"version": "3.7.1",
 	"icon": "assets/icons/icon.png",
@@ -12,13 +12,13 @@
 		"vscode": "^1.84.0"
 	},
 	"author": {
-		"name": "Cline Bot Inc."
+		"name": "notlikejuice."
 	},
 	"license": "Apache-2.0",
 	"publisher": "saoudrizwan",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/cline/cline"
+		"url": "https://github.com/notlikejuice/boo"
 	},
 	"homepage": "https://cline.bot",
 	"categories": [
@@ -57,7 +57,7 @@
 		},
 		"views": {
 			"claude-dev-ActivityBar": [
-				{
+                {
 					"type": "webview",
 					"id": "claude-dev.SidebarProvider",
 					"name": ""
@@ -229,7 +229,7 @@
 		"lint": "eslint src --ext ts && eslint webview-ui/src --ext ts",
 		"format": "prettier . --check",
 		"format:fix": "prettier . --write",
-		"test": "vscode-test",
+		"test": "node test-config.js && vscode-test",
 		"install:all": "npm install && cd webview-ui && npm install",
 		"dev:webview": "cd webview-ui && npm run dev",
 		"build:webview": "cd webview-ui && npm run build",
@@ -242,21 +242,20 @@
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.12",
-		"@types/chai": "^5.0.1",
-		"@types/diff": "^5.2.1",
-		"@types/mocha": "^10.0.7",
-		"@types/node": "20.x",
-		"@types/should": "^11.2.0",
+		"@types/chai": "^5.2.0",
+		"@types/diff": "^7.0.1",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "^22.13.10",
+		"@types/should": "^13.0.0",
 		"@types/sinon": "^17.0.4",
-		"@types/vscode": "^1.84.0",
-		"@typescript-eslint/eslint-plugin": "^7.14.1",
-		"@typescript-eslint/parser": "^7.11.0",
-		"@vscode/test-cli": "^0.0.9",
+		"@types/vscode": "^1.98.0",
+		"@typescript-eslint/eslint-plugin": "^8.26.1",
+		"@typescript-eslint/parser": "^8.26.1",
+		"@vscode/test-cli": "^0.0.10",
 		"@vscode/test-electron": "^2.4.0",
-		"chai": "^4.3.10",
+		"chai": "^5.2.0",
 		"esbuild": "^0.25.0",
-		"eslint": "^8.57.0",
-		"husky": "^9.1.7",
+		"eslint": "^9.22.0",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^3.3.3",
 		"should": "^13.2.3",
@@ -265,11 +264,11 @@
 	},
 	"dependencies": {
 		"@anthropic-ai/bedrock-sdk": "^0.12.4",
-		"@anthropic-ai/sdk": "^0.37.0",
-		"@anthropic-ai/vertex-sdk": "^0.6.4",
+		"@anthropic-ai/sdk": "^0.39.0",
+		"@anthropic-ai/vertex-sdk": "^0.7.0",
 		"@aws-sdk/client-bedrock-runtime": "^3.758.0",
 		"@google-cloud/vertexai": "^1.9.3",
-		"@google/generative-ai": "^0.18.0",
+		"@google/generative-ai": "^0.24.0",
 		"@mistralai/mistralai": "^1.5.0",
 		"@modelcontextprotocol/sdk": "^1.7.0",
 		"@types/clone-deep": "^4.0.4",
@@ -283,12 +282,14 @@
 		"clone-deep": "^4.0.1",
 		"default-shell": "^2.2.0",
 		"delay": "^6.0.0",
-		"diff": "^5.2.0",
+		"deno-cli": "^1.0.5",
+		"diff": "^7.0.0",
 		"execa": "^9.5.2",
 		"fast-deep-equal": "^3.1.3",
 		"firebase": "^11.2.0",
 		"get-folder-size": "^5.0.0",
 		"globby": "^14.0.2",
+		"husky": "^9.1.7",
 		"ignore": "^7.0.3",
 		"isbinaryfile": "^5.0.2",
 		"mammoth": "^1.8.0",
@@ -301,14 +302,14 @@
 		"p-wait-for": "^5.0.2",
 		"pdf-parse": "^1.1.1",
 		"posthog-node": "^4.8.1",
-		"puppeteer-chromium-resolver": "^23.0.0",
-		"puppeteer-core": "^23.4.0",
-		"serialize-error": "^11.0.3",
+		"puppeteer-chromium-resolver": "^24.0.0",
+		"puppeteer-core": "^24.4.0",
+		"serialize-error": "^12.0.0",
 		"simple-git": "^3.27.0",
 		"strip-ansi": "^7.1.0",
 		"tree-sitter-wasms": "^0.1.11",
 		"turndown": "^7.2.0",
-		"web-tree-sitter": "^0.22.6",
+		"web-tree-sitter": "^0.25.3",
 		"zod": "^3.24.2"
 	}
 }
