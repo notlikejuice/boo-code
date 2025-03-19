@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center"><sub>
 English | <a href="https://github.com/cline/cline/blob/main/locales/es/README.md" target="_blank">Español</a> | <a href="https://github.com/cline/cline/blob/main/locales/de/README.md" target="_blank">Deutsch</a> | <a href="https://github.com/cline/cline/blob/main/locales/ja/README.md" target="_blank">日本語</a> | <a href="https://github.com/cline/cline/blob/main/locales/zh-cn/README.md" target="_blank">简体中文</a> | <a href="https://github.com/cline/cline/blob/main/locales/zh-tw/README.md" target="_blank">繁體中文</a> | <a href="https://github.com/cline/cline/blob/main/locales/ko/README.md" target="_blank">한국어</a>
 </sub></div>
@@ -188,3 +189,7 @@ To contribute to the project, start with our [Contributing Guide](CONTRIBUTING.m
 ## License
 
 [Apache 2.0 © 2025 Cline Bot Inc.](./LICENSE)
+=======
+# boo-code
+Cline version optimized under Agents SDK and Respone API, Claude models and local LLM.
+>>>>>>> 17eaaf506313d3f4321da557510f3f506ea1bb16
