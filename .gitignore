@@ -1,0 +1,68 @@
+# Systemowe pliki i katalogi
+.DS_Store
+Thumbs.db
+
+# Katalogi generowane przez edytory i IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.idea/
+*.swp
+*.swo
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# Pliki wynikowe i tymczasowe
+out/
+dist/
+tmp/
+*.log
+*.tmp
+
+# Pliki środowiskowe
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Pliki konfiguracyjne specyficzne dla użytkownika
+.nvmrc
+.prettierignore
+.prettierrc.json
+.eslintrc.json
+
+# Pliki specyficzne dla narzędzi CI/CD
+.vscode-test.mjs
+.vscodeignore
+
+# Pliki specyficzne dla projektu
+.github/
+.changie.yaml
+.clinerules
+
+# Pliki specyficzne dla Deno
+deno.lock
+
+# Pliki specyficzne dla Bun
+bun.lock
+
+# Inne pliki tymczasowe
+*.bak
+*.seed
+*.pid
+*.pid.lock
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# Local History for Visual Studio Code
+.history/
